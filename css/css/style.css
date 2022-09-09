@@ -1,0 +1,121 @@
+/* simple selector */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+p{
+    font-size: 25px;
+    color: red;
+}
+#para{
+    font-size: 35px;
+    border: 1px solid black;
+    color: blue;
+}
+.hp{
+    font-size: 40px;
+    color: blueviolet;
+}
+p.pavilion{
+    font-size: 20px;
+    color: aquamarine;
+}
+h1,.p1{
+    font-size: 50px;
+    border: 2px solid black;
+    color: chartreuse;
+}
+/* combination selector */
+/* descendant selector */
+div p{
+    font-size: 25px;
+    color: burlywood;
+}
+/* child selector */
+#para1 > p{
+    font-size: 35px;
+    color: cadetblue;
+
+}
+/* adjacent sibiling */
+#para1 + p {
+    background-color: brown;
+}
+/* general sibiling */
+#para1 ~ p {
+    font-size: 30px;
+}
+/* Pseudo-class */
+a:hover{
+    color: brown;
+}
+.link1:active{
+    color: black;
+}
+.link2:visited{
+    color: aquamarine;
+}
+p i:first-child{
+    color: blue;
+}
+/* Pseudo-elements */
+.p2::first-line{
+    background-color: yellow;
+}
+.p3::first-letter{
+    font-size: 50px;
+}
+.p2::before{
+    content: "HP PAVILION";
+}
+.p3::after{
+    content: "HP PAVILION";
+}
+/* Attribute Selectors */
+a[class="link3"]{
+    background-color: darkgreen;
+}
+p[class]{
+    background-color:aqua;
+}
+p[class|="set-1"]{
+    color: blue;
+}
+a[target="_blank"]{
+    background-color: blue;
+}
+.aj{
+    visibility: hidden;
+    background-color: blue;
+}
+.box-A{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    display: block;
+}
+.box-B{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    display: inline-block;
+}
+.box-C{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    display: inline-block;
+}
+.box-D{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    display: inline-block;
+    
+}
+.box-E{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    display: block;
+}
